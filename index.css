@@ -33,7 +33,12 @@ body {
     color: darkgray;
 }
 
+.lefttop>a:hover {
+    text-decoration: underline;
+}
+
 .righttop>a {
+    position: static;
     text-decoration: none;
     color: white;
 }
@@ -43,7 +48,7 @@ body {
 }
 
 .righttop>img:hover {
-    border:#9a97a5 solid 1px;
+    border: #9a97a5 solid 2px;
     background-color: #9a97a5;
     border-radius: 50px;
 }
@@ -83,6 +88,9 @@ body {
 }
 
 .bar {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 575px;
     border-radius: 30px;
@@ -101,16 +109,20 @@ body {
     font-size: 16px;
     outline: none;
     background-color: transparent;
-
+    color: white;
+    padding-left: 12px;
 }
 
 .voice {
     height: 20px;
     position: relative;
-    top: 5px;
-    left: 10px;
+    padding-right: 18px;
 }
 
+.material-symbols-outlined {
+    padding-left: 10px;
+    color: rgb(116, 116, 116);
+}
 
 .buttons {
     margin-top: 30px;
@@ -146,6 +158,7 @@ body {
     bottom: 0;
     width: 98%;
     height: 55px;
+    margin: 0;
 }
 
 .left-bot {
